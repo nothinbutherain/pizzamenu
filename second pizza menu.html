@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Second pizza menu</title>
+  </head>
+  <body>
+    <form class="form example" action="" method="get">
+      <div class="form example">
+        <h3> Input type as a text with minimum and maximum length,
+  use the size of the textbox and placeholder for whats behind drop down</h3>
+        <label for="name">Enter your name (4 to 8 characters):</label>
+<input type="text" id="name" name="name" minlength="4" maxlength="10" size="10"
+placeholder="Enter your name">
+</div>
+      <br>
+      <div class="form example">
+        <label for="email">Enter your email:</label>
+        <input type="text" id="email" name="email" minlength="4" maxlength="20"
+        size="20" placeholder="Enter your email">
+      </div>
+      <h3>Button to link elsewhere</h3>
+      <div class="form example">
+        <input type="submit" value="subscribe">
+      </div>
+    </form>
+    <hr>
+    <h3>Textarea</h3>
+    <label for="story">Any additional info:</label>
+    <textarea id="story" name="story" rows="5" cols="33">Please leave comments
+      here</textarea>
+    <hr>
+    <fieldset>
+      <legend>choose ingredients:</legend>
+      <div>
+        <input type="checkbox" id="mushrooms" name="mushrooms" checked>
+        <label for="mushrooms">mushrooms</label>
+      </div>
+      <div>
+        <input type="checkbox" id="salami" name="salami" checked>
+        <label for="salami">salami</label>
+      </div>
+    </fieldset>
+    <hr>
+    <h3>Radio button ex.</h3>
+    <fieldset>
+      <legend>select flour</legend>
+      <div>
+        <input type="radio" id="gluten" name="flour" value="gluten" checked>
+        <label for="gluten">glutenous flour</label>
+      </div>
+      <div>
+        <input type="radio" id="gluten free" name="flour" value="gluten free"
+        checked>
+        <label for="gluten free">gluten free flour</label>
+      </div>
+    </fieldset>
+    <hr>
+    <h3>Checkbox ex.</h3>
+    <div class="preference">
+      <label for="cheese">Do you like cheese?</label>
+      <input type="checkbox" name="cheese" id="cheese">
+    </div>
+    <div class="preference">
+      <label for="chilli">Do you like chilli?</label>
+      <input type="checkbox" name="chilli" id="chilli">
+    </div>
+    <hr>
+    <h3>Dropdown ex.</h3>
+    <label for="ice-cream flavours">Choose a flavour:</label>
+    <input list="ice-cream-flavours" name="ice-cream-choice" id="ice-cream-
+    choice" placeholder="Flavours drop down">
+    <datalist id="ice-cream-flavours">
+      <option value="Chocolate">
+      <option value="Vanilla">
+      <option value="Strawberry">
+      <option value="Mintchoc">
+      <option value="Coconut">
+    </datalist>
+    <hr>
+    <form>
+      <h3>Another Radio ex.</h3>
+      <fieldset>
+        <legend>Choose your extras</legend>
+        <input type="radio" name="rocket" value="topping">
+        <label for="rocket">Rocket</label>
+        <input type="radio" name="goats cheese" value="topping">
+        <label for="goats cheese">Goats cheese</label>
+        <br>
+        <input type="radio" name="spec" value="topping">
+        <label for="spec">Spec</label>
+        <input type="radio" name="peppers" value="topping">
+        <label for="peppers">Peppers</label>
+      </fieldset>
+    </form>
+    <hr>
+    <h3>Fieldset with colors from colorhunt</h3>
+    <fieldset>
+      <input type="radio" name="color" id="red">
+      <label for="red" style="color:#F32424">RED</label>
+      <br>
+      <input type="radio" name="color" id="blue">
+      <label for="blue" style="color:blue">BLUE</label>
+        <br>
+      <input type="radio" name="color" id="yellow">
+      <label for="yellow" style="color:yellow">YELLOW</label>
+    </fieldset>
+  </body>
+</html>
