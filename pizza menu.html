@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pizza form</title>
+	<!--links the ccs to html-->
+	<link href="https://www.just-eat.co.uk/restaurants-pizza-48--tribe-kitchen-edinburgh" rel="stylesheet">
+</head>
+<body>
+	<!--this is the order form, and details-->
+	<img src="C:\Users\D.Clark\Documents\lessons\images\pizza-funnyface.jpg" height="200" width="100%">
+	<h1>Pizza Order</h1>
+	<form action="mailto:"oberdoyle@gmail.com?subject:Enquiry " method="post
+	"enctype="text/plain ">
+		<!--this fieldset contains what you want on the pizza-->
+		<fieldset>
+			<legend>Pizza type</legend>
+			<!--pizza sizes-->
+			<h3>Choose size</h3>
+			<input type="radio" name="size " id="7inch " Value="7inch ">
+			<label for="7inch ">Personal 7</label>
+			<input type="radio" name="size " id="9inch " Value="9inch ">
+			<label for="9inch ">Small 9"</label> <input type="radio" name="size"
+			id="10inch" Value="10inch">
+		<label for="10inch">Medium 10"</label> <input type="radio" name="size"
+		id="12inch" Value="12inch">
+		<label for="12inch"> Large 12"</label>
+		<input type="radio" name="size" id="16inch" Value="16inch">
+		<label for="16inch">Family size 16"</label>
+		<br>
+		<!--Choose the pizza base-->
+		<h3>Choose base</h3>
+		<input type="radio" name="Base" id="thin">
+		<label for="thin">Thin Base</label>
+		<input type="radio" name="Base" id="thick">
+		<label for="thick">Thick Base</label>
+		<br>
+		<!--Choose the toppings for pizza-->
+		<h3>Choose Toppings</h3>
+		<!--Meat options-->
+		<h4>Meat</h4>
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<input type="radio" name="bacon" id="bacon">
+						<label for="bacon">Bacon</label>
+						<input type="radio" name="pepperoni" id="pepperoni">
+						<label for="pepperoni">Pepperoni</label>
+						<input type="radio" name="chicken" id="chicken" Value="chicken">
+						<label for="chicken">Chicken</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="salami" id="salami">
+						<label for="salami">Salami</label>
+						<input type="radio" name="ham" id="ham">
+						<label for="ham">Ham</label>
+						<input type="radio" name="meatballs" id="meatballs" Value=
+						"meatballs">
+						<label for="meatballs">Meatballs</label>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<!--Vegetable options-->
+		<h4>Vegetables</h4>
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<input type="radio" name="red onion" id="red onion">
+						<label for="red onion">Red Onion</label>
+						<input type="radio" name="chilli" id="chilli">
+						<label for="chilli">Chilli</label>
+						<input type="radio" name="mushrooms" id="mushrooms" Value=
+						"mushrooms">
+						<label for="mushrooms">Mushrooms</label>
+						<input type="radio" name="sweetcorn" id="sweetcorn">
+						<label for="sweetcorn">Sweetcorn</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="peter" id="peter">
+						<label for="peter">Peter</label>
+						<input type="radio" name="piper" id="piper">
+						<label for="piper">Piper</label>
+						<input type="radio" name="pickled" id="pickled" Value="pickled">
+						<label for="pickled">Pickled</label>
+						<input type="radio" name="pepper" id="pepper">
+						<label for="pepper">Pepper</label>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		</fieldset>
+		<!--This fieldset contains users details-->
+		<fieldset>
+			<legend>
+				<h3>Details</h3>
+			</legend>
+			<table>
+				<tbody>
+					<tr>
+						<td>
+							<label for="info">
+            <strong>All fields are requered to complete your order, thankyou.
+						</strong>
+						<br>
+						<br>
+						<br>
+          </label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="firstname">First Name:</label>
+						</td>
+						<td>
+							<input type="text" name="first name" id="first name" placeholder=
+							"first name" required>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="lastname">Last Name:</label>
+						</td>
+						<td>
+							<input type="text" name="last name" id="last name" placeholder=
+							"last name" required>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="email">Email Address:</label>
+						</td>
+						<td>
+							<input type="text" name="email" id="email" placeholder="email"
+							required>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="phone">Phone Number:</label>
+						</td>
+						<td>
+							<input type="text" name="phone" id="phone" placeholder="phone"
+							required>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="address">Home Address:</label>
+						</td>
+						<td>
+							<textarea name="address" id="address" cols="30" rows="10"
+							placeholder="Enter Address" required>
+						</textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="delivery time"> Delivery Time: </label>
+						</td>
+						<td>
+							<select name="delivery" id="delivery">
+             <optgroup label="Eat In">
+	<option value="eating in"> Eat-In </option>
+             </optgroup>
+             <optgroup label="Take Away">
+	<option value="asap" default> ASAP </option>
+               <option value="30 min"> 30 Minutes </option>
+               <option value="45 mins"> 45 Minutes </option>
+               <option value="1 hour"> 1 Hour </option>
+            </optgroup>
+            </select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>
+		<!--fieldset for payment details-->
+		<fieldset>
+			<legend>
+				<h3>Payment</h3>
+			</legend>
+			<table>
+				<tbody>
+					<tr>
+						<td>
+							<input type="radio" name="home" id="home">
+						</td>
+						<td>
+							<label for="on arrival">Pay On Arrival</label>
+						</td>
+						<td>
+							<input type="radio" name="home" id="home">
+						</td>
+						<td>
+							<label for="now">Pay Now</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="bank"><strong>Bank Details</strong></label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="card number">Card Number</label>
+						</td>
+						<td>
+							<input type="text" name="card number" id="card number"
+							placeholder="16 digits">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="expirydate">Expiry Date</label>
+						</td>
+						<td>
+							<input type="text" name="expiry date" id="expiry date"
+							placeholder="**/**">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="svv">SVV</label>
+						</td>
+						<td>
+							<input type="text" name="svv" id="svv" placeholder="***">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>
+		<br>
+		<!--the button that submits it all by email-->
+		<tr>
+			<td>
+				<input type="submit" value="Place Your Order">
+			</td>
+		</tr>
+</body>
+</html>
